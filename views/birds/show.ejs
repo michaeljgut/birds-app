@@ -1,0 +1,6 @@
+<h1><%= birds.type %></h1>
+<h3><%= birds.city %></h3>
+<h3><%= birds.description %></h3>
+<form method="POST" action="<%= `/birds/${id}?_method=DELETE` %>">
+  <button type="submit">Delete bird</button>
+</form>

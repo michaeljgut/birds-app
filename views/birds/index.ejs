@@ -1,0 +1,14 @@
+<h1>All the birds</h1>
+
+<% birds.forEach(function(birds, i) { %>
+  <% id = i + 1 %>
+  <div>
+    <h4>
+      <a href="<%= `/birds/${id}` %>">
+        <%= birds.name %>
+      </a>
+    </h4>
+    <p><%= birds.city %></p>
+    <p><%= birds.description %></p>
+  </div>
+<% }) %>
